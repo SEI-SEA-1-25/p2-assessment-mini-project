@@ -1,0 +1,50 @@
+html body {
+  background: rgb(126, 162, 185);
+}
+
+.content {
+  width: 600px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+#add-form {
+  width: 600px;
+  margin: auto;
+}
+
+/* .table {
+  border: 2px solid black;
+} */
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+th,
+td {
+  width: 20px;
+}
+
+.profile {
+  width: 400px;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+}
+
+@media (max-width: 778px) {
+  .content {
+    width: 400px;
+  }
+
+  #add-form {
+    width: 400px;
+  }
+}
