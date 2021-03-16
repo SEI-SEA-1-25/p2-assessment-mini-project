@@ -29,7 +29,7 @@ app.get("/favorites/new", (req, res) => {
   res.render('add-favorite');
 });
 
-//require the routes
+
 require("./app/routes/animal_route")(app);
 
 
