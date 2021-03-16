@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fav Animals</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="validation.js"></script>
+
+</head>
+
+<body>
+	<div id="Main">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+			<div class="container">
+			<div class="navbar-collapse"  id="navbar">
+					<a class="navbar-brand" href="/">Animals Website</a>
+				<ul class="navbar-nav mr-5 mt-.90 ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="/favorites">Favorites</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="/favorites/new">Add New</a></li>
+				</ul>
+			
+			</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container text-center my-4 ">
+        <div class="profile">
+		<div class="card my-4"> 
+            <img class="card-img-top" src="<%= animal.image_url %>" width="300" height="300"/> 
+            <div class="card-body py-1">
+                <p> <b> ID: </b> <%= animal.id %> </p>
+                <p> <b> Species Name: </b> <%= animal.species_name %> </p>
+                <p> <b> Scientific Name:</b> <em> <%= animal.scientific_name %></em>  </p>
+                <p> <b> Description: </b> <%= animal.description %> </p>
+                <div class="d-flex justify-content-center">
+                    <p><b> Extinct: &nbsp;</b></p>
+                    <% if(animal.extinct.toString() == "true") { %>
+                        <p class="text-danger"> Yes </p>
+                    <% } else{ %>
+                        <p> No </p> 
+                    <% } %>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+		
+	</div>
+
+<footer class="container-fluid bg-dark text-white text-center text-muted">
+	Copyrights @ 2021
+</footer>
+
+</body>
+</html>

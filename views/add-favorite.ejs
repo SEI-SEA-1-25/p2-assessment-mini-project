@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add New</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="validation.js"></script>
+
+</head>
+
+<body>
+	<div id="Main">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+			<div class="container">
+			<div class="navbar-collapse"  id="navbar">
+					<a class="navbar-brand" href="/">Animals Website</a>
+				<ul class="navbar-nav mr-5 mt-.90 ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/favorites">Favorites</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link active" href="/favorites/new">Add New</a></li>
+				</ul>
+			
+			</div>
+			</div>
+		</nav>
+	</div>
+
+<!---Sign Up Form-->
+	<section class="my-5">
+		<div id="add-form" class="text-center sign-up-form">
+		<form action="/favorites" method="POST">
+				<h4 class="my-4">Add Favorite Animal</h4>
+				<div class="form-group mx-5 ">
+				  <input type="text"  name="species_name" class="form-control " placeholder="Species Name" required autofocus>
+			  </div>
+			  <div class="form-group mx-5 ">
+				<input type="text"  name="scientific_name" class="form-control "  placeholder="Scientific Name" required>
+			</div>
+			<div class="form-group mx-5 ">
+				<input type="text" name="image_url" class="form-control " placeholder="Image URL" required>
+			</div>
+			<div class="form-group mx-5 ">
+				<input type="text" name="description" class="form-control " placeholder="Description" required>
+			</div>
+			<div class="form-group mx-5 d-flex justify-content-center ">
+				<label class="mx-1"><b>Extinct</b></label>
+				<div class="mx-3">
+					<input type="radio" name="extinct" value="true" class="form-control" required>
+					<label>True</label>
+				</div>
+				<div class="mx-3">					
+					<input type="radio" name="extinct"  value="false" class="form-control" required>
+					<label>False</label>
+				</div>
+				
+			</div>
+			  <button type="submit" class="btn btn-md btn-success px-5">Add</button>
+	  </form>
+	  </section>
+
+	  <footer class="container-fluid bg-dark text-white text-center text-muted">
+		Copyrights @ 2021
+	</footer>
+</body>
+</html>
